@@ -1,0 +1,9 @@
+export const PIP_02_KIND_ROOT = 7300;
+export const PIP_02_KIND_ACTION = 7301;
+export const PIP_02_VERSION = 2;
+export const PROFILE = "pontfx/swap@1";
+export const ROLE_CUSTOMER = "swap/customer";
+export const ROLE_AGENT = "swap/agent";
+export const CORE_ESCROW_ROLE = "core/escrow";
+export const CORE_RESOLVER_ROLE = "core/resolver";
+export const ALGO_SHA256_BYTES = "sha256-bytes@1";

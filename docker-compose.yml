@@ -1,0 +1,16 @@
+services:
+  relay:
+    # ghcr.io/hoytech/strfry:latest is equivalent if ghcr.io is reachable;
+    # docker.io/dockurr/strfry is kept as default because some networks
+    # (incl. this dev machine) block ghcr.io.
+    image: dockurr/strfry
+    container_name: pontfx-relay
+    ports:
+      - "7777:7777"
+    volumes:
+      - strfry-db:/app/strfry-db
+      - ./docker/strfry.conf:/etc/strfry.conf
+    restart: unless-stopped
+
+volumes:
+  strfry-db:

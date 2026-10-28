@@ -1,0 +1,39 @@
+{
+  "name": "pontfx",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nostr-native FX coordination network over Lightning. BTC <-> stable-asset swaps with cryptographically auditable PIP-02 chains.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "keys": "tsx scripts/generate-keys.ts",
+    "seed": "tsx scripts/seed-edge-node.ts",
+    "check": "tsx scripts/check-relay.ts"
+  },
+  "dependencies": {
+    "@ambosstech/payments": "^1.0.0",
+    "next": "^15.5.0",
+    "nostr-tools": "^2.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.21.5": true
+  }
+}
